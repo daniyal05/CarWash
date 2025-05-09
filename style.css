@@ -347,28 +347,32 @@ img{
 
 .services_section {
     color: black;
-    background-color: #00fff225;
+    background-color: #666666;
 }
 .services {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding: 100px 0;
+
 }
 .services_title {
     font-size: 60px;
     font-family: 'Roboto Condensed', 'Arial Narrow', 'Arial', 'sans-serif';
     color: rgb(0, 0, 0);
+    width: 100%;
+    line-height: normal;
 }
 .services_subtitle {
     font-size: 17px;
     font-family: 'Ubuntu', 'Geneva', 'Tahoma', 'sans-serif' ;
     font-weight: 300;
     color: rgb(131, 131, 131);
+    width: 820px;
 }
 .services_list {
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    padding-top: 40px;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -376,11 +380,12 @@ img{
 .service_item {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     height: 100%;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 15px 12px 0 12px;
+    margin: 0 7.5px;
+    border-radius: 5px;
     background-color: #ffffff;
     /* box-shadow: 0px 5px 8px 5px  rgba(0, 0, 0, 0.623); */
     transition: all 0.5s ease;
@@ -407,4 +412,25 @@ img{
 .service_title {
     font-size: 28px;
     font-family: 'Roboto Condensed', 'Arial Narrow', 'Arial', 'sans-serif';
+}
+.service_icon {
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+    width: 100%;
+}
+.service_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 12px 24px;
+    background-color: #ffffff;
+    /* box-shadow: 0px 5px 8px 5px  rgba(0, 0, 0, 0.623); */
+    transition: all 0.5s ease;
+}
+.service_description {
+    font-size: 15px;
+    font-family: 'Ubuntu', 'Geneva', 'Tahoma', 'sans-serif' ;
+    color: #8787A2;
+    font-weight: 200;
 }
