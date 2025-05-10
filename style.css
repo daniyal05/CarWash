@@ -3,7 +3,10 @@
 html{
     scroll-behavior: smooth;
 }
-
+*{
+    padding: 0;
+    margin: 0;
+}
 body {
     padding: 0;
     top: 0;
@@ -18,9 +21,7 @@ body {
     background-color: #fff;
     transition: all 0.3s ease;
 }
-*{
-    margin: 0;
-}
+
 a {
     text-decoration: none;
 }
@@ -454,41 +455,94 @@ img{
 
 
 .prepare_section {
-    color: #141414;
+    color: #fff;
+    background-image: url(./img/prepare_sec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 }
 
-.prepare_ul {
+.prepare_fon {
+    width: 100%;
+    height: 100%;
+    background-color: #000000b0;
+}
+
+.prepare {
+    display: flex;
+    align-items: center;
+    padding: 158px 0;
+    justify-content: flex-start;
+    gap: 40px;
+    
+}
+.prepare_item{
+    font-family: 'Ubuntu', 'Geneva', 'Tahoma', 'sans-serif' ;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+.prepare_text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
+    gap: 30px;
+    width: 50%;
 }
-
-.item {
+.prepare_title {
+    font-size: 58px;
+    font-family: 'Roboto Condensed', 'Arial Narrow', 'Arial', 'sans-serif';
+    color: rgb(255, 255, 255);
+    width: 70%;
+    line-height: normal;
+}
+.prepare_subtitle {
+    font-size: 17px;
+    font-family: 'Ubuntu', 'Geneva', 'Tahoma', 'sans-serif' ;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    width: 70%;
+}
+.btn_prepare {
+    background-color: rgb(71, 77, 251);
+    padding: 13px 39px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Ubuntu', 'Geneva', 'Tahoma', 'sans-serif' ;
+    font-weight: 300;
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    width: 82px;
 }
 
-.circle {
+
+
+
+.prepare_spisok{
+    list-style: none;
+    margin: 30px;
+    position: relative;
+    max-width: 100%;
+
+
+}
+
+.prepare_spisok:after{
+    content: '';
+    position: absolute; top: 5px; left: 4px;
+    width: 1px;
+    height: calc(100% - 10px);
+    background: rgb(255, 255, 255);      
+}
+.prepare_spisok > .prepare_item{
+    padding-left: 20px;
+    position: relative;
+    margin: 50px 0;
+}
+.prepare_spisok > .prepare_item:before{
+    content: '';
+    position: absolute; top: 3px; left: -6px;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    background-color: #fff;
-    margin-right: 10px;
-}
-
-.text {
-    font-size: 16px;
-}
-
-.prepare_ul::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 2px;
-    background-color: #fff;
-    transform: translateX(-50%);
+    background: rgb(255, 255, 255); 
+    border-radius: 50%;    
 }
