@@ -6,7 +6,11 @@ html{
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+*::before, *::after {
+    box-sizing: border-box;
+  }
 body {
     padding: 0;
     top: 0;
@@ -445,7 +449,6 @@ img{
     font-weight: 300;
     transition: all 0.5s ease;
     margin-top: 30px;
-    width: 189px;
 }
 .btn:hover {
     transition: all 0.5s ease;
@@ -510,8 +513,17 @@ img{
     font-size: 16px;
     font-family: 'Ubuntu', 'Geneva', 'Tahoma', 'sans-serif' ;
     font-weight: 300;
+    transition: all 0.5s ease;
+}
+.btn_prepare:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+}
+.button_t{
+    position: relative;
     display: flex;
-    width: 82px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
 }
 
 
@@ -528,8 +540,8 @@ img{
 
 .prepare_spisok:after{
     content: '';
-    position: absolute; top: 5px; left: 4px;
-    width: 1px;
+    position: absolute; top: 5px; left: 3px;
+    width: 2px;
     height: calc(100% - 10px);
     background: rgb(255, 255, 255);      
 }
@@ -545,4 +557,25 @@ img{
     height: 20px;
     background: rgb(255, 255, 255); 
     border-radius: 50%;    
+}
+
+
+
+
+.club_card_section{
+    background-color: #fff;
+    padding: 100px 0;
+}
+.club_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.club_card_title {
+    font-size: 58px;
+    font-family: 'Roboto Condensed', 'Arial Narrow', 'Arial', 'sans-serif';
+    color: rgb(0, 0, 0);
+    width: 70%;
 }
